@@ -39,40 +39,60 @@
 
           <h2 class="visually-hidden">Список товаров</h2>
 
-          <!--"for emmet"ul.catalog-list>(li.catalog-item>img+span.item-hover>h3+p+a)*6-->
-          
+
+          <!--"for_emmet"ul.catalog-list>(li.catalog-item>img[src="http://placehold.it/150x100"]+div.hover>h3+p+p.catalog-item-price>a.price-button[href="#"]{9900 руб.})*6-->
+
           <ul class="catalog-list">
-            <li class="catalog-item"><img src="http://placehold.it/150x100" alt="Sedona"><span class="item-hover">
-                <h3>Sedona</h3>
-                <p>Информационный сайт для туристов</p>
-                <a href="#" class="buy-button">9 900 руб.</a>
-              </span></li>
-            <li class="catalog-item"><img src="http://placehold.it/150x100" alt="Pink App"><span class="item-hover">
-                <h3>Pink App</h3>
-                <p>Продуктовый лендинг приложения для iOS и Android</p>
-                <a href="#" class="buy-button">9 900 руб.</a>
-              </span></li>
-            <li class="catalog-item"><img src="http://placehold.it/150x100" alt="Barbershop"><span class="item-hover">
-                <h3>Barbershop</h3>
-                <p>Сайт салоны красоты.Для мужчин, да.</p>
-                <a href="#" class="buy-button">9 900 руб.</a>
-              </span></li>
-            <li class="catalog-item"><img src="http://placehold.it/150x100" alt="Mishka"><span class="item-hover">
-                <h3>Mishka</h3>
-                <p>Интернет-магазин вязаных игрушек</p>
-                <a href="#" class="buy-button">9 900 руб.</a>
-              </span></li>
-            <li class="catalog-item"><img src="http://placehold.it/150x100" alt="A Plus"><span class="item-hover">
-                <h3>A Plus</h3>
-                <p>Лендинг курсов повышения квалификации</p>
-                <a href="#" class="buy-button">9 900 руб.</a>
-              </span></li>
-            <li class="catalog-item"><img src="http://placehold.it/150x100" alt="Кваст"><span class="item-hover">
-                <h3>Кваст</h3>
-                <p>Промо-сайт производителя крафтового кваса</p>
-                <a href="#" class="buy-button">9 900 руб.</a>
-              </span></li>
+          	<li class="catalog-item">
+          		<img src="http://placehold.it/150x100" alt="Sedona">
+          		<div class="hover">
+          			<h3>Sedona</h3>
+          			<p>Информационный сайт для туристов</p>
+          			<p class="catalog-item-price"><a href="#" class="price-button">9900 руб.</a></p>
+          		</div>
+          	</li>
+          	<li class="catalog-item">
+          		<img src="http://placehold.it/150x100" alt="Pink App">
+          		<div class="hover">
+          			<h3>Pink App</h3>
+          			<p>Продуктовый лендинг приложения для iOS и Android</p>
+          			<p class="catalog-item-price"><a href="#" class="price-button">9900 руб.</a></p>
+          		</div>
+          	</li>
+          	<li class="catalog-item">
+          		<img src="http://placehold.it/150x100" alt="Barbershop">
+          		<div class="hover">
+          			<h3>Barbershop</h3>
+          			<p>Сайт салоны красоты. Для мужчин, да.</p>
+          			<p class="catalog-item-price"><a href="#" class="price-button">9900 руб.</a></p>
+          		</div>
+          	</li>
+          	<li class="catalog-item">
+          		<img src="http://placehold.it/150x100" alt="Mishka">
+          		<div class="hover">
+          			<h3>Mishka</h3>
+          			<p>Интернет-магазин вязаных игрушек</p>
+          			<p class="catalog-item-price"><a href="#" class="price-button">9900 руб.</a></p>
+          		</div>
+          	</li>
+          	<li class="catalog-item">
+          		<img src="http://placehold.it/150x100" alt="A Plus">
+          		<div class="hover">
+          			<h3>A Plus</h3>
+          			<p>Лендинг курсов повышения квалификации</p>
+          			<p class="catalog-item-price"><a href="#" class="price-button">9900 руб.</a></p>
+          		</div>
+          	</li>
+          	<li class="catalog-item">
+          		<img src="http://placehold.it/150x100" alt="Кваст">
+          		<div class="hover">
+          			<h3>Кваст</h3>
+          			<p>Промо-сайт производителя крафтового кваса</p>
+          			<p class="catalog-item-price"><a href="#" class="price-button">9900 руб.</a></p>
+          		</div>
+          	</li>
           </ul>
+ 
 
           <ul class="pagination-list">
             <li class="pagination-item-current"><a href="#">1</a></li>
@@ -82,31 +102,36 @@
           </ul>
         </section>
 
-        <footer class="main-footer">
+      <!--Футер--> 
+
+      <footer class="main-footer">
 
         <section class="map">
-          <h3 class="visually-hidden">Карта</h3>
-          <!--map script-->
-          <img  class="map-img"src="http://placehold.it/150x100" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+      	    <h3 class="visually-hidden">Карта</h3>
+      		<!--map script-->
+      		<img class="map-img" src="http://placehold.it/150x100" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         </section>
 
         <section class="contacts">
+          <h3 class="visually-hidden">Контакты</h3>
           <b>NЁRDS DESIGN STUDIO</b>
-          <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8<br><br>тел. +7 (812) 275-75-75</p>
-          <a href="#">Напишите нам</a>
+      	  <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8<br><br>тел. +7 (812) 275-75-75</p>
+      	  <a href="#">Напишите нам</a>
         </section>
 
-        <section class="footer-social"> 
-          <b>Давайте дружить, это выгодно!</b>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-          <div class="footer-social-menu">
-          <ul>
-            <li><a href="#" class="social-button">Вконтакте</a></li>
-            <li><a href="#" class="social-button">Фейсбук</a></li>
-            <li><a href="#" class="social-button">Инстаграм</a></li>
-          </ul>
-          </div>
-        </section>    
+        <section class="footer-social">	
+          <h3 class="visually-hidden">Социальные сети</h3>
+      	  <b>Давайте дружить, это выгодно!</b>
+      	  <p>Скидка 10% для друзей из социальных сетей.</p>
+      	  <div class="footer-social-menu">
+      		<ul>
+      			<li><a href="#" class="social-button">Вконтакте</a></li>
+      			<li><a href="#" class="social-button">Фейсбук</a></li>
+      			<li><a href="#" class="social-button">Инстаграм</a></li>
+      		</ul>
+      	  </div>
+        </section>		
       </footer>
-    </main>
-
+    </main>	
+  </body>
+</html>
