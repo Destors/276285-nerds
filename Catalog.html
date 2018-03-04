@@ -7,128 +7,108 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="header-logo" href="index.html">
+        <a class="header-logo">
           <img src="img/nerds-logo.png" alt="Нёрдс лого">
         </a>
         <ul class="site-navigation">
-          <li class="link"><a href="studio.html">Студия</a></li>
-          <li class="link"><a href="clients.html">Клиенты</a></li>
-          <li class="site-navigation-current"><a href="shop.html">Магазин</a></li>
-          <li class="link"><a href="contacts.html">Контакты</a></li>
+          <li class="site-navigation-item"><a href="studio.html">Студия</a></li>
+          <li class="site-navigation-item"><a href="clients.html">Клиенты</a></li>
+          <li class="site-navigation-item current"><a href="shop.html">Магазин</a></li>
+          <li class="site-navigation-item"><a href="contacts.html">Контакты</a></li>
         </ul>
-        <!--Не знал как отоброзить корзину, сделал списком и отдельным классом-->
-        <ul class="shopping-basket">
-          <li class="link">Корзина</li>
-        </ul>
+        <div class="site-navigation-item basket"><a href="basket.html">Корзина</a></div>
       </nav>
     </header>
-
     <main class="conteiner">
-
       <h1>Магазин готовых шаблонов</h1>
-
-        <section class="left-filter">
+      <section class="product-filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <!-- Здесь будет форма -->
         </section>
-
         <section class="sorting-filter">
         <h2 class="visually-hidden">Сортировка товаров</h2>
         <!-- Здесь будет форма -->
         </section>
-
         <section class="catalog">
-
           <h2 class="visually-hidden">Список товаров</h2>
-
-          <!--"for_emmet"ul.catalog-list>(li.catalog-item>img[src="http://placehold.it/150x100"]+div.hover>h3+p+a.price-button[href="#"]{9900 руб.})*6-->
-
-          <ul class="catalog-list">
-          	<li class="catalog-item">
-          		<img src="http://placehold.it/150x100" alt="Sedona">
-          		<div class="hover">
-          			<h3>Sedona</h3>
-          			<p>Информационный сайт для туристов</p>
-          			<a href="#" class="price-button">9900 руб.</a>
-          		</div>
-          	</li>
-          	<li class="catalog-item">
-          		<img src="http://placehold.it/150x100" alt="Pink App">
-          		<div class="hover">
-          			<h3>Pink App</h3>
-          			<p>Продуктовый лендинг приложения для iOS и Android</p>
-          			<a href="#" class="price-button">9900 руб.</a>
-          		</div>
-          	</li>
-          	<li class="catalog-item">
-          		<img src="http://placehold.it/150x100" alt="Barbershop">
-          		<div class="hover">
-          			<h3>Barbershop</h3>
-          			<p>Сайт салоны красоты. Для мужчин, да.</p>
-          			<a href="#" class="price-button">9900 руб.</a>
-          		</div>
-          	</li>
-          	<li class="catalog-item">
-          		<img src="http://placehold.it/150x100" alt="Mishka">
-          		<div class="hover">
-          			<h3>Mishka</h3>
-          			<p>Интернет-магазин вязаных игрушек</p>
-          			<a href="#" class="price-button">9900 руб.</a>
-          		</div>
-          	</li>
-          	<li class="catalog-item">
-          		<img src="http://placehold.it/150x100" alt="A Plus">
-          		<div class="hover">
-          			<h3>A Plus</h3>
-          			<p>Лендинг курсов повышения квалификации</p>
-          			<a href="#" class="price-button">9900 руб.</a>
-          		</div>
-          	</li>
-          	<li class="catalog-item">
-          		<img src="http://placehold.it/150x100" alt="Кваст">
-          		<div class="hover">
-          			<h3>Кваст</h3>
-          			<p>Промо-сайт производителя крафтового кваса</p>
-          			<a href="#" class="price-button">9900 руб.</a>
-          		</div>
-          	</li>
-          </ul>
-
+          <!--"for_emmet"(article.catalog-item>img[src="http://placehold.it/150x100"]+div.catalog-item-pop-up>h3+p+a.catalog-item-pop-up-button[href="#"]{9900 руб.})*6-->
+          <article class="catalog-item">
+            <img src="http://placehold.it/150x100" alt="Sedona">
+            <div class="catalog-item-pop-up">
+              <h3>Sedona</h3>
+              <p>Информационный сайт для туристов</p>
+              <a href="#" class="catalog-item-pop-up-button">9900 руб.</a>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <img src="http://placehold.it/150x100" alt="Pink App">
+            <div class="catalog-item-pop-up">
+              <h3>Pink App</h3>
+              <p>Продуктовый лендинг приложения для iOS и Android</p>
+              <a href="#" class="catalog-item-pop-up-button">9900 руб.</a>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <img src="http://placehold.it/150x100" alt="Barbershop">
+            <div class="catalog-item-pop-up">
+              <h3>Barbershop</h3>
+              <p>Сайт салоны красоты. Для мужчин, да.</p>
+              <a href="#" class="catalog-item-pop-up-button">9900 руб.</a>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <img src="http://placehold.it/150x100" alt="Mishka">
+            <div class="catalog-item-pop-up">
+              <h3>Mishka</h3>
+              <p>Интернет-магазин вязаных игрушек</p>
+              <a href="#" class="catalog-item-pop-up-button">9900 руб.</a>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <img src="http://placehold.it/150x100" alt="A Plus">
+            <div class="catalog-item-pop-up">
+              <h3>A Plus</h3>
+              <p>Лендинг курсов повышения квалификации</p>
+              <a href="#" class="catalog-item-pop-up-button">9900 руб.</a>
+            </div>
+          </article>
+          <article class="catalog-item">
+            <img src="http://placehold.it/150x100" alt="Кваст">
+            <div class="catalog-item-pop-up">
+              <h3>Кваст</h3>
+              <p>Промо-сайт производителя крафтового кваса</p>
+              <a href="#" class="catalog-item-pop-up-button">9900 руб.</a>
+            </div>
+          </article>
           <ul class="pagination-list">
-            <li class="pagination-item-current"><a href="#">1</a></li>
-            <li class="pagination-item"><a href="#">2</a></li>
-            <li class="pagination-item"><a href="#">3</a></li>
-            <li class="pagination-item-next"><a href="#">Следующая</a></li>
+            <li class="pagination-list-page current"><a href="#">1</a></li>
+            <li class="pagination-list-page"><a href="#">2</a></li>
+            <li class="pagination-list-page"><a href="#">3</a></li>
+            <li class="pagination-list-page next"><a href="#">Следующая</a></li>
           </ul>
         </section>
     </main>
-
- <!--Футер-->
-
-      <footer class="main-footer">
-
-        <div class="map">
-          <h3 class="visually-hidden">Карта</h3>
-          <!--map script-->
-          <img class="map-img" src="http://placehold.it/150x100" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-        </div>
-
-        <div class="contacts">
-          <h3 class="visually-hidden">Контакты</h3>
-          <b>NЁRDS DESIGN STUDIO</b>
-          <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8<br><br>тел. +7 (812) 275-75-75</p>
-          <button>Напишите нам</button>
-        </div>
-
-        <section class="footer-social">
-          <h3 class="visually-hidden">Социальные сети</h3>
-          <b>Давайте дружить, это выгодно!</b>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-          <div class="footer-social-menu">
+    <footer class="main-footer">
+      <section class="map">
+        <h3 class="visually-hidden">Карта</h3>
+        <!--map script-->
+        <img class="map-img" src="http://placehold.it/150x100" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+      </section>
+      <section class="contacts">
+        <h3 class="visually-hidden">Контакты</h3>
+        <b>NЁRDS DESIGN STUDIO</b>
+        <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8<br><br>тел. +7 (812) 275-75-75</p>
+        <button>Напишите нам</button>
+      </section>
+      <section class="footer-social">
+        <h3 class="visually-hidden">Социальные сети</h3>
+        <b>Давайте дружить, это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <div class="footer-social-menu">
           <ul>
-            <li><a href="#" class="social-button">Вконтакте</a></li>
-            <li><a href="#" class="social-button">Фейсбук</a></li>
-            <li><a href="#" class="social-button">Инстаграм</a></li>
+            <li><a href="#" class="footer-social-menu-button">Вконтакте</a></li>
+            <li><a href="#" class="footer-social-menu-button">Фейсбук</a></li>
+            <li><a href="#" class="footer-social-menu-button">Инстаграм</a></li>
           </ul>
           </div>
         </section>
