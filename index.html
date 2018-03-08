@@ -6,9 +6,9 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
+      <nav class="main-navigation" aria-label="Основное меню">
         <a class="header-logo">
-          <img src="img/nerds-logo.png" width="160" height="65" alt="Нёрдс лого">
+          <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип студии Нёрдс">
         </a>
         <ul class="site-navigation">
           <li class="site-navigation-item">
@@ -82,10 +82,9 @@
       	  </ul>
       	</div>
       	<div class="features-extra">
-      	  <img src="img/nerds-illustration.png" width="360" height="208" alt="Нёрдс лого">
-      	  <b>с 2004 года Любим точность во всем:</b>
-          <!--Таблицу в css буду вызывать через(.features-extra+table)-->
+      	  <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип студии Нёрдс с декоративными элементами">
       	  <table>
+            <caption>с 2004 года Любим точность во всем:</caption>
             <tr>
               <th>146%</th>
               <th>100%</th>
@@ -98,43 +97,73 @@
             </tr>
           </table>
       	</div>
-      	<div class="partners">
+      </section>
+      <section class="partners">
+          <h3 class="visually-hidden">Наши партнеры</h3>
       		<a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/htmlaca-logo.png" width="199" height="68" alt="HTML Academy">
+            <img src="img/htmlaca-logo.png" width="199" height="68" alt="Онлайн курсы веб-разработки HTML Academy">
           </a>
       		<a href="#">
-            <img src="img/brodinski-logo.png" width="209" height="90" alt="Brodinski">
+            <img src="img/brodinski-logo.png" width="209" height="90" alt="Барбершоп Brodinski">
           </a>
       		<a href="#">
-            <img src="img/pink-logo.png" width="185" height="52" alt="Pink">
+            <img src="img/pink-logo.png" width="185" height="52" alt="Мобильные приложения Pink">
           </a>
       		<a href="#">
-            <img src="img/mishka-logo.png" width="173" height="84" alt="Mishka">
+            <img src="img/mishka-logo.png" width="173" height="84" alt="Милые штуки ручной работы Mishka">
           </a>
-      	</div>
       </section>
     </main>
     <footer class="main-footer">
       <section class="map">
         <h3 class="visually-hidden">Карта</h3>
         <!--map script-->
-        <img class="map-img" src="img/map.jpg" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        <img class="map-img" src="img/map.jpg" alt="Мы находимся по адресу: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
       </section>
       <section class="contacts">
-        <h3 class="visually-hidden">Контакты</h3>
+        <h3 class="visually-hidden">Наши контакты</h3>
         <b>NЁRDS DESIGN STUDIO</b>
         <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8<br><br>тел. +7 (812) 275-75-75</p>
         <button>Напишите нам</button>
       </section>
+      <!--"emmet_popup_form"section.writeus-popup>h2{Напишите нам}+form.popup-form[action="https://echo.htmlacademy.ru" method="post"]>fieldset>legend{Заполните простую форму и напишете нам}+(p>label[for="username"]{Ваше имя:}+br+input[type="text" name="username" id="username" placeholder="Имя Фамилия"])+(p>label[for="email"]{Ваш e-mail:}+br+input[type="email" name="email" id="email" placeholder="email@example.com"])+(p>label[for="massage"]{Текст письма:}+br+textarea[type="text" name="massage" id="massage" placeholder="В свободной форме" rows="3"])+input[type=submit neme=regid value=Отправить]^button.form-close-btn-->
+      <section class="writeus-popup">
+        <h2>Напишите нам</h2>
+        <form action="https://echo.htmlacademy.ru" class="popup-form" method="post">
+          <fieldset>
+            <legend>Заполните простую форму и напишете нам</legend>
+            <p>
+              <label for="username">Ваше имя:</label>
+              <br>
+              <input type="text" name="username" id="username" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <label for="email">Ваш e-mail:</label>
+              <br>
+              <input type="email" name="email" id="email" placeholder="email@example.com">
+            </p>
+            <p>
+              <label for="massage">Текст письма:</label>
+              <br>
+              <textarea name="massage" id="massage" cols="30" rows="3" type="text" placeholder="В свободной форме"></textarea>
+            </p>
+            <input type="submit" neme="regid" value="Отправить">
+          </fieldset>
+          <button class="form-close-btn"></button>
+        </form>
+      </section>
       <section class="footer-social">
-        <h3 class="visually-hidden">Социальные сети</h3>
+        <h3 class="visually-hidden">Мы в социальных сетях</h3>
         <b>Давайте дружить, это выгодно!</b>
         <p>Скидка 10% для друзей из социальных сетей.</p>
         <div class="footer-social-menu">
           <ul>
-            <li><a href="#" class="social-link vk">Вконтакте</a></li>
-            <li><a href="#" class="social-link fb">Фейсбук</a></li>
-            <li><a href="#" class="social-link inst">Инстаграм</a></li>
+            <li><a href="#" class="social-link vk">Российская социальная сеть Вконтакте</a>
+            </li>
+            <li><a href="#" class="social-link fb">Крупнейшая социальная сеть в мире Фейсбук</a>
+            </li>
+            <li><a href="#" class="social-link inst">Социальная сеть для обмена и оценки фотографий Инстаграм</a>
+            </li>
           </ul>
         </div>
       </section>
