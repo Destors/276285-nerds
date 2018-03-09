@@ -1,4 +1,4 @@
-.modal-overlay {
+.overlay {
   background: #000;
   position: fixed;
   left: 0;
@@ -6,7 +6,7 @@
   top: 0;
   bottom: 0;
   z-index: 1000;
-  opacity: .5;
+  opacity: 0.5;
 }
 .modal-block {
   background: #fff;
@@ -17,6 +17,18 @@
   overflow: hidden;
   z-index: 2000;
   width: 500px;
-  padding: 0px;
+  padding: 20px;
   margin-left: -250px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width:100%;
+    border:2px solid #ccc;
+    padding:4px 5px;
+    background:white;
+    border-radius: 1px;
+    box-sizing:border-box;
 }

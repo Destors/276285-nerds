@@ -126,35 +126,36 @@
         <h3 class="visually-hidden">Наши контакты</h3>
         <b>NЁRDS DESIGN STUDIO</b>
         <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8<br><br>тел. +7 (812) 275-75-75</p>
-        <button onClick="getElementById('modal-window').removeAttribute('style');">Напишите нам</button>
+        <button class="modal-btn" onClick="getElementById('modal-window').removeAttribute('style');">Напишите нам</button>
       </section>
       <!--"emmet_modal_form"section.writeus-modal>h2{Напишите нам}+form.writeus-modal-form[action="https://echo.htmlacademy.ru" method="post"]>fieldset>legend{Заполните простую форму и напишете нам}+(p>label[for="username"]{Ваше имя:}+br+input[type="text" name="username" id="username" placeholder="Имя Фамилия"])+(p>label[for="email"]{Ваш e-mail:}+br+input[type="email" name="email" id="email" placeholder="email@example.com"])+(p>label[for="massage"]{Текст письма:}+br+textarea[name="massage" id="massage" placeholder="В свободной форме" rows="3"])+input[type=submit value=Отправить]^button.modal-close-btn-->
       <section id="modal-window" style="display:none;">
-        <div class="modal-overlay"></div>
+        <!--Тестовая форма-->
+        <div class="overlay"></div>
         <div class="modal-block">
-        <h2>Напишите нам</h2>
-        <form action="https://echo.htmlacademy.ru" class="writeus-modal-form" method="post">
-          <fieldset>
-            <legend>Заполните простую форму и напишете нам</legend>
-            <p>
-              <label for="username">Ваше имя:</label>
-              <br>
-              <input type="text" name="username" id="username" placeholder="Имя Фамилия">
-            </p>
-            <p>
-              <label for="email">Ваш e-mail:</label>
-              <br>
-              <input type="email" name="email" id="email" placeholder="email@example.com">
-            </p>
-            <p>
-              <label for="massage">Текст письма:</label>
-              <br>
-              <textarea name="massage" id="massage" cols="30" rows="3" placeholder="В свободной форме"></textarea>
-            </p>
-            <input type="submit" value="Отправить">
-          </fieldset>
-        </form>
-         <button class="modal-close-btn" onClick="getElementById('modal-window').style.display='none';">закрыть</button>
+          <h2>Напишите нам</h2>
+          <form action="https://echo.htmlacademy.ru" class="writeus-modal-form" method="post">
+            <fieldset>
+              <legend>Заполните простую форму и напишете нам</legend>
+              <p>
+                <label for="username">Ваше имя:</label>
+                <br>
+                <input type="text" name="username" id="username" placeholder="Имя Фамилия">
+              </p>
+              <p>
+                <label for="email">Ваш e-mail:</label>
+                <br>
+                <input type="email" name="email" id="email" placeholder="email@example.com">
+              </p>
+              <p>
+                <label for="massage">Текст письма:</label>
+                <br>
+                <textarea name="massage" id="massage" cols="30" rows="3" placeholder="В свободной форме"></textarea>
+              </p>
+              <input type="submit" value="Отправить">
+            </fieldset>
+          </form>
+           <button class="modal-close-btn" onClick="getElementById('modal-window').style.display='none';">закрыть</button>
         </div>
       </section>
       <section class="footer-social">
