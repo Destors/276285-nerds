@@ -32,7 +32,7 @@
     <main class="conteiner">
       <h1>Магазин готовых шаблонов</h1>
       <section class="product-filter">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <h2 class="visually-hidden">Фильтр особенностей товаров</h2>
         <form action="https://echo.htmlacademy.ru" method="post"  oninput="level.value=cost.valueAsNumber">
           <fieldset class="price-filter">
             <legend>Cтоимость:</legend>
@@ -88,7 +88,26 @@
         </form>
       </section>
       <section class="sorting-filter">
-        <h2 class="visually-hidden">Сортировка товаров</h2>
+        <h2 class="visually-hidden">Фильтр сортировки товаров</h2>
+        <form class="sorting-menu" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <legend>Сортировать:</legend>
+            <ul>
+              <li>
+                <input type="radio" name="sorting-group" id="sort-price" value="sort-price">
+                <label for="sort-price">По цене</label>
+              </li>
+              <li>
+                <input type="radio" name="sorting-group" id="sort-type" value="sort-type">
+                <label for="sort-type">По типу</label>
+              </li>
+              <li>
+                <input type="radio" name="sorting-group" id="sort-name" value="sort-name">
+                <label for="sort-name">По названию</label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список товаров</h2>
