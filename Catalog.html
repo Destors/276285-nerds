@@ -91,25 +91,16 @@
       </section>
       <section class="sorting-filter">
         <h2 class="visually-hidden">Фильтр сортировки товаров</h2>
-        <form class="sorting-menu" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset>
-            <legend>Сортировать:</legend>
-            <ul>
-              <li>
-                <input type="radio" name="sorting-group" id="sort-price" value="sort-price">
-                <label for="sort-price">По цене</label>
-              </li>
-              <li>
-                <input type="radio" name="sorting-group" id="sort-type" value="sort-type">
-                <label for="sort-type">По типу</label>
-              </li>
-              <li>
-                <input type="radio" name="sorting-group" id="sort-name" value="sort-name">
-                <label for="sort-name">По названию</label>
-              </li>
-            </ul>
-          </fieldset>
-        </form>
+        <b>Сортировать:</b>
+        <ul>
+          <li><a href="#">По цене:</a></li>
+          <li><a href="#">По типу:</a></li>
+          <li><a href="#">По названию:</a></li>
+        </ul>
+        <div class="sorting-switch">
+          <a href="#" aria-label="От большего к меньшему"></a>
+          <a href="#" aria-label="От меньшего к большему"></a>
+        </div>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список товаров</h2>
