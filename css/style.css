@@ -25,10 +25,9 @@
 input[type="text"],
 input[type="email"],
 textarea {
-    width:100%;
-    border:2px solid #ccc;
-    padding:4px 5px;
-    background:white;
-    border-radius: 1px;
-    box-sizing:border-box;
+  width:100%;
+  border:2px solid #ccc;
+  padding:4px 5px;
+  background:white;
+  box-sizing:border-box;
 }
