@@ -1,3 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', Optima, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #283136;
+
+  background-color: #ffffff;
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+.main-header {
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: #eeeeee;
+}
+
+.logo-link:hover {
+  opacity: 0.8;
+}
+
+.logo-link:focus {
+  opacity: 0.3;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-list {
+  list-style: none;
+  color: #000000
+}
+
+.nav-link a {
+  color: #000000
+}
+
+.nav-link a:hover {
+  color: #fb565a;
+}
+
+.nav-link a:focus {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.nav-list .current a {
+  padding-bottom: 3px;
+  border-bottom: 2px solid #fb565a;
+}
+
+/*<section class="slider">*/
+
+.slider {
+  background-color: #eeeeee;
+}
+
+.slider-item {
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.slider-item h3 {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  text-align: left;
+  color: #000000;
+}
+
+.slider-btn {
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #fb565a;
+
+  display: block;
+  width: 240px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.slider .one {
+  background-image: url(../img/slide1.png);
+}
+
+.slider .two {
+  background-image: url(../img/slide2.png);
+}
+
+.slider .three {
+  background-image: url(../img/slide3.png);
+}
+
+/*</section>*/
+
+/*<section class="main-products">*/
+
+.products-list {
+  list-style: none;
+}
+
+
+
+
 .overlay {
   background: #000;
   position: fixed;
