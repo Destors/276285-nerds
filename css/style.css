@@ -34,6 +34,27 @@ a {
   width: 240px;
   height: 50px;
   border-radius: 5px;
+  border: 0px;
+}
+
+.btn:hover {
+  background-color: #e74246;
+}
+
+.btn:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #d7373b;
+}
+
+button {
+  border: 0px;
+}
+
+.header-font {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  color: #000000;
 }
 
 /*END-General Classes*/
@@ -92,15 +113,6 @@ a {
   background-position: right;
 }
 
-.slider-item h3 {
-  font-size: 55px;
-  font-weight: 500;
-  line-height: 55px;
-  text-align: left;
-  color: #000000;
-}
-
-
 .slider .one {
   background-image: url(../img/slide1.png);
 }
@@ -127,9 +139,10 @@ a {
 }
 
 .products-item h3 {
-  font-size: 24 px;
+  font-size: 24px;
   text-transform: uppercase;
   line-height: 30px;
+  color: #000000;
 }
 
 .products-list .one {
@@ -167,9 +180,9 @@ a {
 }
 
 .upb {
-  font-weight: 700;
-  line-height: 24px
   text-transform: uppercase;
+  font-weight: 700;
+  line-height: 24px;
   color: #000000;
 }
 
@@ -201,7 +214,7 @@ a {
 /*END<section class="partners">*/
 
 
-/*modal-START*/
+/*START<section id="modal-window"*/
 
 .overlay {
   background: #000;
@@ -229,14 +242,72 @@ a {
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  border: 2px solid #ccc;
-  padding: 4px 5px;
-  background: white;
-  box-sizing: border-box;
+
+.modal-block h2 {
+  font-size: 45px;
+  font-weight: 500;
+}
+.input-label {
+  font-weight: 700;
 }
 
-/*modal-END*/
+/*END<section id="modal-window"*/
+
+/*START<section class="footer-social">*/
+
+.footer-social b {
+  font-size: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.social-link {
+  background-color: #e1e1e1;
+  list-style: none;
+}
+
+/*END<section class="footer-social">*/
+
+/*catalog.html*/
+
+.catalog-header {
+  background-color: #eeeeee;
+}
+
+.catalog-item-popup {
+  background-color: #eeeeee;
+}
+
+.catalog-item-popup h3>a {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 30px;
+  color: #000000;
+}
+
+.catalog-item-popup p {
+  line-height: 18px;
+}
+
+.pagination-link a {
+  text-transform:uppercase;
+  font-weight:500;
+  color: #000000;
+}
+
+.filter-head {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.sorting-list {
+  list-style: none;
+}
+
+.sorting-link a {
+  font-size: 14px;
+  color: #000000;
+}
+
