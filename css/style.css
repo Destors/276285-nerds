@@ -8,18 +8,15 @@ body {
   font-weight: 400;
   line-height: 24px;
   color: #283136;
-
   background-color: #ffffff;
-}
-
-/*START-General Classes*/
-
-.visually-hidden {
-  visibility: hidden;
 }
 
 a {
   text-decoration: none;
+}
+
+.visually-hidden {
+  visibility: hidden;
 }
 
 .btn {
@@ -29,8 +26,6 @@ a {
   line-height: 18px;
   color: #ffffff;
   background-color: #fb565a;
-
-
   width: 240px;
   height: 50px;
   border-radius: 5px;
@@ -46,26 +41,18 @@ a {
   background-color: #d7373b;
 }
 
-button {
-  border: 0px;
-}
-
-.header-font {
+.catalog-header {
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
   color: #000000;
 }
 
-/*END-General Classes*/
-
-/*START<header class="main-header">*/
-
-
 .main-header {
   font-weight: 500;
   text-transform: uppercase;
   background-color: #eeeeee;
+  color: #000000;
 }
 
 .logo-link:hover {
@@ -76,33 +63,27 @@ button {
   opacity: 0.3;
 }
 
-
 .nav-list {
   list-style: none;
-  color: #000000
 }
 
-.nav-link a {
-  color: #000000
+.nav-link {
+  color: #000000;
 }
 
-.nav-link a:hover {
+.nav-link:hover {
   color: #fb565a;
 }
 
-.nav-link a:focus {
+.nav-link:focus {
   color: #000000;
   opacity: 0.3;
 }
 
-.nav-list .current a {
+.nav-list .current {
   padding-bottom: 3px;
   border-bottom: 2px solid #fb565a;
 }
-
-/*END<header class="main-header">*/
-
-/*START<section class="slider">*/
 
 .slider {
   background-color: #eeeeee;
@@ -124,10 +105,6 @@ button {
 .slider .three {
   background-image: url(../img/slide3.png);
 }
-
-/*END<section class="slider">*/
-
-/*START<section class="main-products">*/
 
 .products-list {
   list-style: none;
@@ -169,10 +146,6 @@ button {
   background-color: #efc84a;
 }
 
-/*END<section class="main-products">*/
-
-/*START<section class="features">*/
-
 .features-main h3 {
   font-size: 45px;
   line-height: 45px;
@@ -191,10 +164,6 @@ button {
   line-height: 10px;
 }
 
-/*END<section class="features">*/
-
-/*START<section class="partners">*/
-
 .partners-list {
   display: flex;
   list-style: none;
@@ -211,10 +180,6 @@ button {
 .partners-list a:focus {
   opacity: 0.1;
 }
-/*END<section class="partners">*/
-
-
-/*START<section id="modal-window"*/
 
 .overlay {
   background: #000;
@@ -242,18 +207,14 @@ button {
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
-
 .modal-block h2 {
   font-size: 45px;
   font-weight: 500;
 }
+
 .input-label {
   font-weight: 700;
 }
-
-/*END<section id="modal-window"*/
-
-/*START<section class="footer-social">*/
 
 .footer-social b {
   font-size: 36px;
@@ -265,10 +226,6 @@ button {
   background-color: #e1e1e1;
   list-style: none;
 }
-
-/*END<section class="footer-social">*/
-
-/*catalog.html*/
 
 .catalog-header {
   background-color: #eeeeee;
@@ -301,7 +258,6 @@ button {
   font-weight: 700;
   font-size: 18px;
 }
-
 .sorting-list {
   list-style: none;
 }
