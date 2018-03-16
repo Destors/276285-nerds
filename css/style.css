@@ -13,6 +13,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #000000;
 }
 
 .visually-hidden {
@@ -115,7 +116,8 @@ a {
   background-position: right;
 }
 
-.products-item h3 {
+.products-item-header {
+  /*Заголовок products-item*/
   font-size: 24px;
   text-transform: uppercase;
   line-height: 30px;
@@ -134,32 +136,32 @@ a {
   background-image: url(../img/illustration-3.jpg);
 }
 
-.itb-1 {
+.products-btn-1 {
   /*sizing*/
 }
 
-.itb-2 {
+.products-btn-2 {
   background-color: #00ca74;
 }
 
-.itb-3 {
+.products-btn-3 {
   background-color: #efc84a;
 }
 
-.features-main h3 {
+.features-main-head {
   font-size: 45px;
   line-height: 45px;
   color: #000000;
 }
 
-.upb {
+.mini-head {
   text-transform: uppercase;
   font-weight: 700;
   line-height: 24px;
   color: #000000;
 }
 
-.th-bold {
+.table-row-head {
   font-size: 45px;
   line-height: 10px;
 }
@@ -169,15 +171,15 @@ a {
   list-style: none;
 }
 
-.partners-list a {
+.partners-link {
   opacity: 0.2;
 }
 
-.partners-list a:hover {
+.partners-link:hover {
   opacity: 0.8;
 }
 
-.partners-list a:focus {
+.partners-link:focus {
   opacity: 0.1;
 }
 
@@ -207,16 +209,16 @@ a {
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
-.modal-block h2 {
+.modal-head {
   font-size: 45px;
   font-weight: 500;
 }
 
-.input-label {
+.modal-label {
   font-weight: 700;
 }
 
-.footer-social b {
+.footer-social-head {
   font-size: 36px;
   font-weight: 700;
   color: #000000;
@@ -235,25 +237,28 @@ a {
   background-color: #eeeeee;
 }
 
-.catalog-item-popup h3>a {
+.catalog-item-popup>:first-child {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 30px;
-  color: #000000;
 }
 
-.catalog-item-popup p {
+.catalog-item-popup:nth-child(2) {
   line-height: 18px;
 }
 
-.pagination-link a {
+.pagination-list {
+  list-style: none;
+  display: flex;
+}
+.pagination-link {
   text-transform:uppercase;
   font-weight:500;
   color: #000000;
 }
 
-.filter-head {
+.sorting-head {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 18px;
@@ -262,7 +267,7 @@ a {
   list-style: none;
 }
 
-.sorting-link a {
+.sorting-link {
   font-size: 14px;
   color: #000000;
 }

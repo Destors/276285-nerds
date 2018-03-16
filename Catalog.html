@@ -94,11 +94,11 @@
     </section>
     <section class="sorting-filter">
       <h2 class="visually-hidden">Фильтр сортировки товаров</h2>
-      <b class="filter-head">Сортировать:</b>
+      <b class="sorting-head">Сортировать:</b>
       <ul class="sorting-list">
-        <li class="sorting-link"><a href="#">По цене:</a></li>
-        <li class="sorting-link"><a href="#">По типу:</a></li>
-        <li class="sorting-link"><a href="#">По названию:</a></li>
+        <li><a class="sorting-link" href="#">По цене:</a></li>
+        <li><a  class="sorting-link" href="#">По типу:</a></li>
+        <li><a  class="sorting-link" href="#">По названию:</a></li>
       </ul>
       <div class="sorting-switch">
         <a href="#" aria-label="От большего к меньшему"></a>
@@ -107,7 +107,6 @@
     </section>
     <section class="catalog">
       <h2 class="visually-hidden">Список товаров</h2>
-      <!--"for_emmet"(article.catalog-item>img[src="http://placehold.it/150x100"]+div.catalog-item-pop-up>h3+p+a.catalog-item-pop-up-button[href="#"]{9900 руб.})*6-->
       <article class="catalog-item">
         <img src="img/catalog/img-sedona.jpg" width="364" height="580" alt="Sedona">
         <div class="catalog-item-popup">
@@ -157,17 +156,17 @@
         </div>
       </article>
       <ul class="pagination-list">
-        <li class="pagination-link current">
-          <a href="#">1</a>
+        <li>
+          <a class="pagination-link current" href="#">1</a>
         </li>
-        <li class="pagination-link">
-          <a href="#">2</a>
+        <li>
+          <a class="pagination-link" href="#">2</a>
         </li>
-        <li class="pagination-link">
-          <a href="#">3</a>
+        <li>
+          <a class="pagination-link" href="#">3</a>
         </li>
-        <li class="pagination-link next">
-          <a href="#">Следующая</a>
+        <li>
+          <a class="pagination-link next" href="#">Следующая</a>
         </li>
       </ul>
     </section>
@@ -189,20 +188,20 @@
       <!--Тестовая форма-->
       <div class="overlay"></div>
       <div class="modal-block">
-        <h2>Напишите нам</h2>
+        <h2 class="modal-head">Напишите нам</h2>
         <form action="https://echo.htmlacademy.ru" class="writeus-modal-form" method="post">
           <fieldset>
             <legend>Заполните простую форму и напишете нам</legend>
             <p>
-              <label for="username" class="input-label">Ваше имя:</label>
+              <label for="username" class="modal-label">Ваше имя:</label>
               <input type="text" name="username" id="username" placeholder="Имя Фамилия">
             </p>
             <p>
-              <label for="email" class="input-label">Ваш e-mail:</label>
+              <label for="email" class="modal-label">Ваш e-mail:</label>
               <input type="email" name="email" id="email" placeholder="email@example.com">
             </p>
             <p>
-              <label for="massage" class="input-label">Текст письма:</label>
+              <label for="massage" class="modal-label">Текст письма:</label>
               <textarea name="massage" id="massage" cols="30" rows="3" placeholder="В свободной форме"></textarea>
             </p>
             <input class="btn" type="submit" value="Отправить">
@@ -213,7 +212,7 @@
     </section>
     <section class="footer-social">
       <h3 class="visually-hidden">Мы в социальных сетях</h3>
-      <b>Давайте дружить, это выгодно!</b>
+      <b class="footer-social-head">Давайте дружить, это выгодно!</b>
       <p>Скидка 10% для друзей из социальных сетей.</p>
       <div class="footer-social-menu">
         <ul>
