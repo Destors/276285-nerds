@@ -215,6 +215,7 @@ a {
   opacity: 0.5;
 }
 
+
 /*у тебя фиксированная ширина, используй transform чтобы центровать*/
 
 .modal-block {
@@ -266,7 +267,6 @@ a {
   line-height: 55px;
   color: #000000;
   background-color: #eeeeee;
-
 }
 
 .catalog-item-popup {
