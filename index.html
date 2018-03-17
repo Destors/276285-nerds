@@ -37,17 +37,17 @@
     <section class="slider">
       <h2 class="visually-hidden">Наши принципы</h2>
       <div class="slider-item one current">
-        <h3>Долго, дорого, скрупулезно.</h3>
+        <h3 class="slider-head">Долго, дорого, скрупулезно.</h3>
         <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
         <a class="btn" href="#">Узнать больше</a>
       </div>
       <div class="slider-item two">
-        <h3>Любим математику как никто другой.</h3>
+        <h3 class="slider-head">Любим математику как никто другой.</h3>
         <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
         <a class="btn" href="#">Узнать больше</a>
       </div>
       <div class="slider-item three">
-        <h3>Только ночь, только хардкор.</h3>
+        <h3 class="slider-head">Только ночь, только хардкор.</h3>
         <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
         <a class="btn" href="#">Узнать больше</a>
       </div>
@@ -57,17 +57,17 @@
       <h2 class="visually-hidden">Наши продукты</h2>
       <ul class="products-list">
         <li class="products-item one">
-          <h3 class="products-item-header">Веб-сайты</h3>
+          <h3 class="products-item-head">Веб-сайты</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
           <a class="btn products-btn-1" href="#">Заказать</a>
         </li>
         <li class="products-item two">
-          <h3 class="products-item-header">Приложения</h3>
+          <h3 class="products-item-head">Приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
           <a class="btn products-btn-2" href="#">Заказать</a>
         </li>
         <li class="products-item three">
-          <h3 class="products-item-header">Призентации</h3>
+          <h3 class="products-item-head">Призентации</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
           <a class="btn products-btn-3" href="#">Заказать</a>
         </li>
@@ -89,7 +89,7 @@
         <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип студии Нёрдс с декоративными элементами">
         <table>
           <caption class="mini-head">с 2004 года Любим точность во всем:</caption>
-          <tr class="mini-head table-row-head">
+          <tr class="mini-head features-tr-head">
             <th>146%</th>
             <th>100%</th>
             <th>50%</th>
@@ -136,12 +136,30 @@
     </section>
     <section class="contacts">
       <h3 class="visually-hidden">Наши контакты</h3>
-      <b class="upb">NЁRDS DESIGN STUDIO</b>
+      <b class="contacts-head">NЁRDS DESIGN STUDIO</b>
       <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8<br><br>тел. +7 (812) 275-75-75</p>
       <button class="btn" onClick="getElementById('modal-window').removeAttribute('style');">Напишите нам</button>
     </section>
-    <!--"emmet_modal_form_old"section.writeus-modal>h2{Напишите нам}+form.writeus-modal-form[action="https://echo.htmlacademy.ru" method="post"]>fieldset>legend{Заполните простую форму и напишете нам}+(p>label[for="username"]{Ваше имя:}+br+input[type="text" name="username" id="username" placeholder="Имя Фамилия"])+(p>label[for="email"]{Ваш e-mail:}+br+input[type="email" name="email" id="email" placeholder="email@example.com"])+(p>label[for="massage"]{Текст письма:}+br+textarea[name="massage" id="massage" placeholder="В свободной форме" rows="3"])+input[type=submit value=Отправить]^button.modal-close-btn-->
-    <section id="modal-window" style="display:none;">
+    <section class="footer-social">
+      <h3 class="visually-hidden">Мы в социальных сетях</h3>
+      <b class="footer-social-head">Давайте дружить, это выгодно!</b>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+      <div class="footer-social-menu">
+        <ul class="footer-social-list">
+          <li>
+            <a href="#" class="social-link vk" title="Мы Вконтакте" aria-label="Вконтакте"></a>
+          </li>
+          <li>
+            <a href="#" class="social-link fb" title="Мы в фейсбук" aria-label="Фейсбук"></a>
+          </li>
+          <li>
+            <a href="#" class="social-link inst" title="Мы в Инстаграм" aria-label="Инстаграм"></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </footer>
+  <section id="modal-window" style="display:none;">
       <!--Тестовая форма-->
       <div class="overlay"></div>
       <div class="modal-block">
@@ -167,24 +185,5 @@
          <button class="modal-close-btn" onClick="getElementById('modal-window').style.display='none';">закрыть</button>
       </div>
     </section>
-    <section class="footer-social">
-      <h3 class="visually-hidden">Мы в социальных сетях</h3>
-      <b class="footer-social-head">Давайте дружить, это выгодно!</b>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
-      <div class="footer-social-menu">
-        <ul>
-          <li>
-            <a href="#" class="social-link vk" title="Мы Вконтакте" aria-label="Вконтакте"></a>
-          </li>
-          <li>
-            <a href="#" class="social-link fb" title="Мы в фейсбук" aria-label="Фейсбук"></a>
-          </li>
-          <li>
-            <a href="#" class="social-link inst" title="Мы в Инстаграм" aria-label="Инстаграм"></a>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </footer>
 </body>
 </html>
