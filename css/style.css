@@ -16,8 +16,12 @@ a {
 }
 
 .visually-hidden {
-  visibility: hidden;
-}
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+ }
 
 .btn {
   font-weight: 500;
@@ -125,8 +129,9 @@ a {
 }
 
 .slider-block {
-  margin-top: -100px;
-  padding: 0;
+  margin: 0px;
+  margin-top: 12px;
+  padding: 0px;
   background-color: #eeeeee;
   background-color: #255F10;
 }
@@ -174,14 +179,14 @@ a {
 }
 
 .main-products {
-  padding: 0px;
   margin: 0px;
-  margin-top: 37px;
+  padding: 0px;
+  margin-top: 80px;
 }
 
 .products-list {
-  padding: 0px;
   margin: 0px;
+  padding: 0px;
   padding-right: 60px;
   display: flex;
   list-style: none;
@@ -189,16 +194,17 @@ a {
 }
 
 .products-item {
-  padding: 0px;
   margin: 0px;
+  padding: 0px;
   width: 300px;
   background-repeat: no-repeat;
   background-position: right;
 }
 
 .products-item-content {
-  padding: 0px;
   margin: 0px;
+  padding: 0px;
+  padding-left: -5px;
   display: flex;
   padding-right: 50px;
   flex-direction: column;
@@ -207,6 +213,8 @@ a {
 }
 
 .products-item-title {
+  margin: 0px;
+  padding: 0px;
   font-size: 24px;
   line-height: 30px;
   color: #000000;
@@ -320,19 +328,24 @@ a {
   opacity: 0.1;
 }
 
-.map {
+.contacts {
   width: 1440px;
+  height: 416px;
   margin: 0px auto;
+  padding: 0px;
 }
 
-.contacts {
+.contacts-menu {
   margin: 0px;
-  background-color: lightblue;
   width: 220px;
   padding-top: 5px;
   padding-bottom: 47px;
   padding-left: 50px;
   padding-right: 50px;
+  position: relative;
+  top: -380px;
+  left: 50px;
+  background-color: lightblue;
 }
 
 .btn.contacts-btn {
