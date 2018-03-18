@@ -30,8 +30,9 @@
         </div>
       </nav>
     </header>
-    <main class="conteiner">
+    <main class="container">
       <h1 class="catalog-header">Магазин готовых шаблонов</h1>
+      <div class="catalog-page">
       <section class="product-filter">
         <h2 class="visually-hidden">Фильтр особенностей товаров</h2>
         <form action="https://echo.htmlacademy.ru" method="post" oninput="level.value=cost.valueAsNumber">
@@ -66,6 +67,7 @@
           <input type="submit" value="Показать">
         </form>
       </section>
+      <div class="catalog-main-colum">
       <section class="sorting-filter">
         <h2 class="visually-hidden">Фильтр сортировки товаров</h2>
         <b class="filter-title">Сортировать:</b>
@@ -86,6 +88,7 @@
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список товаров</h2>
+        <div class="catalog-list">
         <article class="catalog-item">
           <img alt="Sedona" height="580" src="img/catalog/img-sedona.jpg" width="364">
           <div class="catalog-item-popup">
@@ -134,6 +137,7 @@
             <a class="btn" href="#">9900 руб.</a>
           </div>
         </article>
+        </div>
         <ul class="pagination-list">
           <li>
             <a class="pagination-link current" href="#">1</a>
@@ -150,10 +154,13 @@
         </ul>
       </section>
     </main>
+    </div>
+    </div>
     <footer class="main-footer">
       <section class="map">
         <h3 class="visually-hidden">Карта</h3>
-        <iframe allowfullscreen height="416" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sca!4v1520619382243" style="border:0" width="1440"></iframe> <!--<img class="map-img" src="img/map.jpg" width="1440" height="416" alt="Мы находимся по адресу: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">-->
+        <!--<iframe allowfullscreen height="416" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sca!4v1520619382243" style="border:0" width="1440"></iframe>-->
+        <img class="map-img" src="img/map.jpg" width="1440" height="416" alt="Мы находимся по адресу: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
       </section>
       <section class="contacts">
         <h3 class="visually-hidden">Наши контакты</h3>
@@ -163,24 +170,24 @@
           <br>
           тел. +7 (812) 275-75-75
         </p>
-        <button class="btn" onclick="getElementById('modal-window').removeAttribute('style');">Напишите нам</button>
+        <button class="btn contacts-btn" onclick="getElementById('modal-window').removeAttribute('style');">Напишите нам</button>
       </section>
       <section class="footer-social">
         <h3 class="visually-hidden">Мы в социальных сетях</h3>
-        <b class="footer-social-title">Давайте дружить, это выгодно!</b>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-        <div class="footer-social-menu">
-          <ul class="footer-social-list">
-            <li>
-              <a aria-label="Вконтакте" class="social-link vk" href="#" title="Мы Вконтакте"></a>
-            </li>
-            <li>
-              <a aria-label="Фейсбук" class="social-link fb" href="#" title="Мы в фейсбук"></a>
-            </li>
-            <li>
-              <a aria-label="Инстаграм" class="social-link inst" href="#" title="Мы в Инстаграм"></a>
-            </li>
-          </ul>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a aria-label="Вконтакте" class="social-link vk" href="#" title="Мы Вконтакте"></a>
+          </li>
+          <li class="footer-social-item">
+            <a aria-label="Фейсбук" class="social-link fb" href="#" title="Мы в фейсбук"></a>
+          </li>
+          <li class="footer-social-item">
+            <a aria-label="Инстаграм" class="social-link inst" href="#" title="Мы в Инстаграм"></a>
+          </li>
+        </ul>
+        <div class="footer-social-head">
+          <b class="footer-social-title">Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </section>
     </footer>

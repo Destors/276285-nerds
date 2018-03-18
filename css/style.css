@@ -47,8 +47,14 @@ a {
 .catalog-header {
   font-size: 55px;
   font-weight: 500;
+  text-align: center;
+  padding-top: 72px;
+  padding-right: 3px;
+  padding-bottom: 109px;
   line-height: 55px;
   color: #000000;
+  margin: 0 auto;
+  width: 1160px;
 }
 
 .main-header {
@@ -115,7 +121,7 @@ a {
   margin: 0 auto;
 
 }
-.slider {
+.slider-block {
   margin-top: -100px;
   padding: 0;
   background-color: #eeeeee;
@@ -136,6 +142,7 @@ a {
 
 .slider-title {
   font-size: 55px;
+  font-weight: 500;
   line-height: 55px;
   color: #000000;
 }
@@ -310,6 +317,26 @@ a {
   opacity: 0.1;
 }
 
+.map {
+  width: 1440px;
+  margin: 0px auto;
+}
+
+.contacts {
+  margin: 0px;
+  background-color: lightblue;
+  width: 220px;
+  padding-top: 5px;
+  padding-bottom: 47px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.btn.contacts-btn {
+  padding: 20px 40px;
+  max-width: 240px;
+}
+
 .overlay {
   background: #000;
   position: fixed;
@@ -377,6 +404,7 @@ a {
 
 .catalog-item-popup {
   background-color: #eeeeee;
+  /*del*/display: none;
 }
 
 .filter-title {
@@ -451,5 +479,47 @@ a {
   border-radius: 40px;
   background-image: url(../img/fb-icon.svg)
   background-size: cover;
+}
+
+.catalog-page {
+  display: flex;
+}
+
+.catalog-main-colum {
+  width: 760px;
+  margin-top: -10px;
+  margin-left: 139px;
+}
+
+.catalog-list {
+  margin: 0px;
+  padding: 0px;
+  width: 760px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.catalog-item {
+  margin: 0px;
+  padding: 0px;
+  width: 360px;
+  height: 615;
+  background-color: silver;
+  overflow: hidden;
+}
+
+.product-filter {
+  padding: 0px;
+  margin: 0px;
+  width: 260px;
+}
+
+.sorting-filter {
+  width: 760px;
+}
+
+.sorting-list {
+  display: flex;
 }
 
