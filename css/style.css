@@ -336,6 +336,7 @@ a {
   height: 416px;
   margin: 0px auto;
   padding: 0px;
+  position: relative;
 }
 
 .contacts-menu {
@@ -345,9 +346,9 @@ a {
   padding-bottom: 47px;
   padding-left: 50px;
   padding-right: 50px;
-  position: relative;
-  top: -380px;
-  left: 50px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
   background-color: lightblue;
 }
 
