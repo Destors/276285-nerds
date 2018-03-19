@@ -69,14 +69,10 @@ a {
   margin: 0 auto;
   width: 1160px;
   margin-top: 49px;
-  /*delete*/
-  background-color: #FC0219;
 }
 
 .main-navigation {
   display: flex;
-  /*delete*/
-  background-color: #fb565a;
 }
 
 .logo-link:hover {
@@ -92,8 +88,6 @@ a {
   padding: 0px;
   margin-top: 30px;
   margin-left: 201px;
-  /*delete*/
-  background-color: #54D826;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -133,7 +127,6 @@ a {
   margin-top: 12px;
   padding: 0px;
   background-color: #eeeeee;
-  background-color: #255F10;
 }
 
 .slider-item {
@@ -144,7 +137,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: #98D12DFF;
   width: 380px;
 }
 
@@ -275,7 +267,6 @@ a {
 }
 
 .features-block {
-  background-color: #00aa62;
   width: 1160px;
   display: flex;
   justify-content: space-around;
@@ -283,7 +274,6 @@ a {
 
 .features-main {
   margin-right: 130px;
-  background-color: #e5a722;
 }
 
 .features-main-title {
@@ -299,9 +289,7 @@ a {
   color: #000000;
 }
 
-.features-extra {
-  background-color: #E96015;
-}
+.features-extra {}
 
 .mini-title.features-tr-title {
   font-size: 45px;
@@ -316,7 +304,6 @@ a {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  background-color: #E96015;
 }
 
 .partners-link {
@@ -349,7 +336,7 @@ a {
   position: absolute;
   top: 20px;
   left: 20px;
-  background-color: lightblue;
+  background-color: white;
 }
 
 .btn.contacts-btn {
@@ -367,7 +354,6 @@ a {
   z-index: 1000;
   opacity: 0.5;
 }
-
 
 /*у тебя фиксированная ширина, используй transform чтобы центровать*/
 
@@ -464,12 +450,10 @@ a {
   width: 1160px;
   display: flex;
   justify-content: space-between;
-  background-color: #BF0027FF;
 }
 
 .footer-social-head {
   width: 560px;
-  background-color: lightblue;
 }
 
 .footer-social-list {
@@ -479,7 +463,6 @@ a {
   display: flex;
   justify-content: space-between;
   width: 260px;
-  background-color: #E96015;
 }
 
 .footer-social-item {
