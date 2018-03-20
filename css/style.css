@@ -66,13 +66,16 @@ a {
   text-transform: uppercase;
   background-color: #eeeeee;
   color: #000000;
+  width: 1200px;
   margin: 0 auto;
-  width: 1160px;
+  padding: 0 20px;
+  box-sizing: border-box;
   margin-top: 49px;
 }
 
 .main-navigation {
   display: flex;
+  justify-content: space-between;
 }
 
 .logo-link:hover {
@@ -87,7 +90,6 @@ a {
   margin: 0px;
   padding: 0px;
   margin-top: 30px;
-  margin-left: 201px;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -96,7 +98,6 @@ a {
 
 .basket {
   margin-top: 30px;
-  margin-left: 285px;
 }
 
 .nav-link.current {
@@ -118,8 +119,10 @@ a {
 }
 
 .container {
-  width: 1160px;
+  width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .slider-block {
@@ -319,15 +322,20 @@ a {
 }
 
 .contacts {
-  width: 1440px;
-  height: 416px;
+  width: auto;
   margin: 0px auto;
   padding: 0px;
   position: relative;
+  overflow: hidden;
+}
+
+.map-img {
+  display: block;
+  margin: 0px auto;
 }
 
 .contacts-menu {
-  margin: 0px;
+  margin: 0px auto;
   width: 220px;
   padding-top: 5px;
   padding-bottom: 47px;
@@ -515,7 +523,6 @@ a {
   margin: 0px;
   padding: 0px;
   width: 360px;
-  height: 615;
   background-color: silver;
   overflow: hidden;
 }
