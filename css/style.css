@@ -1,3 +1,6 @@
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
 body {
   margin: 0;
   padding: 0;
@@ -69,7 +72,6 @@ a {
   margin: 0 auto;
   padding: 0 20px;
   padding-top: 49px;
-  box-sizing: border-box;
 }
 
 .main-navigation {
@@ -121,7 +123,6 @@ a {
   width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  box-sizing: border-box;
 }
 
 .slider-block {
@@ -321,8 +322,6 @@ a {
   width: auto;
   margin: 0px auto;
   padding: 0px;
-  position: relative;
-  overflow: hidden;
 }
 
 .map-img {
@@ -330,13 +329,13 @@ a {
   margin: 0px auto;
 }
 
+.contacts-block {
+  position: relative;
+}
+
 .contacts-menu {
   margin: 0px auto;
   width: 220px;
-  padding-top: 5px;
-  padding-bottom: 47px;
-  padding-left: 50px;
-  padding-right: 50px;
   position: absolute;
   top: 20px;
   left: 20px;
