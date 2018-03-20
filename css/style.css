@@ -67,8 +67,8 @@ a {
   color: #000000;
   width: 1200px;
   margin: 0 auto;
-  margin-top: 49px;
   padding: 0 20px;
+  padding-top: 49px;
   box-sizing: border-box;
 }
 
@@ -126,8 +126,8 @@ a {
 
 .slider-block {
   margin: 0px;
-  margin-top: 12px;
   padding: 0px;
+  padding-top: 12px;
   background-color: #eeeeee;
 }
 
