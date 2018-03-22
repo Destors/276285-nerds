@@ -56,7 +56,7 @@ a {
   background-color: #d7373b;
 }
 
-.container.catalog-header {
+.catalog-header {
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
@@ -71,7 +71,7 @@ a {
   padding-top: 45px;
 }
 
-.container.main-navigation {
+.main-navigation {
   font-weight: 500;
   line-height: 30px;
   text-transform: uppercase;
