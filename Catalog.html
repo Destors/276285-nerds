@@ -12,6 +12,7 @@
       <div class="container">
         <nav aria-label="Основное меню" class="main-navigation">
           <a class="header-logo logo-link" href="index.html"><img alt="Логотип студии Нёрдс" height="65" src="img/nerds-logo.png" width="160"></a>
+          <div class="main-menu">
           <ul class="nav-list">
             <li>
               <a class="nav-link" href="studio.html">Студия</a>
@@ -29,6 +30,7 @@
           <div class="basket">
             <a class="nav-link" href="basket.html">Корзина</a>
           </div>
+          </div>
         </nav>
         <h1 class="catalog-header">Магазин готовых шаблонов</h1>
       </div>
@@ -39,16 +41,24 @@
           <h2 class="visually-hidden">Фильтр особенностей товаров</h2>
           <form action="https://echo.htmlacademy.ru" method="post" oninput="level.value=cost.valueAsNumber">
             <!--будущая замена плагином(<div class="price-filter">)-->
-            <fieldset class="price-filter">
+            <fieldset class="filter-item price-filter">
               <legend class="filter-title">Cтоимость:</legend>
-              <input id="cost" max="15000" min="0" name="cost" step="1000" type="range" value="0">
-              <ul class="price-filter-list">
-                <li>от 0</li>
-                <li>до <output for="cost" name="level">15000</output></li>
-              </ul>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                </div>
+              </div>
             </fieldset>
             <!--будущая замена плагином(</div>)-->
-            <fieldset class="features-filter">
+            <fieldset class="filter-item features-filter">
               <legend class="filter-title">Сетка:</legend>
               <ul>
                 <li>
@@ -65,7 +75,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="features-filter">
+            <fieldset class="filter-item features-filter">
               <legend class="filter-title">Особенности:</legend>
               <ul>
                 <li>
