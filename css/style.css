@@ -360,6 +360,10 @@ a {
   line-height: 10px;
 }
 
+.features-tr-content {
+  line-height: 18px;
+}
+
 .partners-list {
   padding: 0px;
   margin: 0px;
@@ -578,6 +582,9 @@ a {
 
 .catalog-item-frame {
   border: 2px solid black;
+}
+
+.catalog-item-img {
 }
 
 
