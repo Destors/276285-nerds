@@ -40,7 +40,6 @@
         <section class="product-filter">
           <h2 class="visually-hidden">Фильтр особенностей товаров</h2>
           <form action="https://echo.htmlacademy.ru" method="post" oninput="level.value=cost.valueAsNumber">
-            <!--будущая замена плагином(<div class="price-filter">)-->
             <fieldset class="filter-item price-filter">
               <legend class="filter-title">Cтоимость:</legend>
               <div class="range-filter">
@@ -52,12 +51,11 @@
                   <div class="toggle toggle-max"></div>
                 </div>
                 <div class="price-controls">
-                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                  <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                  <label class="price-label min-price">от <input class="price-input" name="min-price" type="text" value="0"></label>
+                  <label class="price-label max-price">до <input class="price-input" name="max-price" type="text" value="15 000"></label>
                 </div>
               </div>
             </fieldset>
-            <!--будущая замена плагином(</div>)-->
             <fieldset class="filter-item features-filter">
               <legend class="filter-title">Сетка:</legend>
               <ul>
@@ -105,21 +103,25 @@
         <div class="catalog-main-colum">
           <section class="sorting-filter">
             <h2 class="visually-hidden">Фильтр сортировки товаров</h2>
-            <b class="filter-title">Сортировать:</b>
-            <ul class="sorting-list">
-              <li>
-                <a class="sorting-link current" href="#">По цене:</a>
-              </li>
-              <li>
-                <a class="sorting-link" href="#">По типу:</a>
-              </li>
-              <li>
-                <a class="sorting-link" href="#">По названию:</a>
-              </li>
-            </ul>
-            <div class="sorting-switch">
-              <a aria-label="От большего к меньшему" title="От большего к меньшему" href="#"></a>
-              <a aria-label="От меньшего к большему" title="От меньшего к большему" href="#"></a>
+            <div class="sorting-colum">
+              <b class="filter-title">Сортировать:</b>
+            </div>
+            <div class="sorting-colum">
+              <ul class="sorting-list">
+                <li>
+                  <a class="sorting-link current" href="#">По цене</a>
+                </li>
+                <li>
+                  <a class="sorting-link" href="#">По типу</a>
+                </li>
+                <li>
+                  <a class="sorting-link" href="#">По названию</a>
+                </li>
+              </ul>
+              <div class="sorting-switch">
+                <a aria-label="От большего к меньшему" title="От большего к меньшему" href="#">s</a>
+                <a aria-label="От меньшего к большему" title="От меньшего к большему" href="#">d</a>
+              </div>
             </div>
           </section>
           <section class="catalog">

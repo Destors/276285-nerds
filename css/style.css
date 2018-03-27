@@ -68,7 +68,7 @@ a {
   text-align: center;
   padding-top: 31px;
   padding-bottom: 109px;
-  margin-bottom: 58px;
+  margin-bottom: 54px;
   color: #000000;
 }
 
@@ -390,6 +390,7 @@ a {
   bottom: 0;
   z-index: 1000;
   opacity: 0.5;
+  display: none;
 }
 
 /*у тебя фиксированная ширина, используй transform чтобы центровать*/
@@ -406,6 +407,7 @@ a {
   padding: 20px;
   margin-left: -250px;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4);
+  display: none;
 }
 
 .modal-title {
@@ -436,7 +438,7 @@ a {
   margin-top: 49px;
 }
 
-.filter-item legend {
+.filter-title {
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
@@ -448,7 +450,7 @@ a {
 
   height: 81px;
   margin-bottom: 15px;
-  padding-top: 39px;
+  padding-top: 40px;
   padding-right: 20px;
   padding-left: 20px;
 
@@ -498,7 +500,7 @@ a {
   font-size: 0;
 }
 
-.price-controls label {
+.price-label {
   display: inline-block;
   width: 50%;
 
@@ -506,13 +508,11 @@ a {
   text-transform: uppercase;
 }
 
-.price-controls input {
-  width: 60px;
-  padding: 8px 10px;
-  margin-left: 10px;
+.price-input {
+  width: 80px;
+  padding: 10px 10px;
+  margin-left: 8px;
 
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 16px;
   text-align: center;
   color: #283136;
 
@@ -624,7 +624,6 @@ a {
 
 .catalog-main-colum {
   width: 760px;
-  margin-top: -10px;
   margin-left: 139px;
 }
 
@@ -652,9 +651,31 @@ a {
 }
 
 .sorting-filter {
+  margin: 0px;
+  padding: 0px;
   width: 760px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .sorting-list {
+  margin: 0px;
+  padding: 0px;
+  width: 280px;
   display: flex;
+  justify-content: space-between;
 }
+
+.sorting-colum {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sorting-switch {
+  padding-left: 20px;
+}
+
+.modal-window {
+  display: none;
+}
+
