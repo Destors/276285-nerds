@@ -61,6 +61,13 @@ a {
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
+.popup-btn {
+  padding: 18px 0px;
+  width: 200px;
+  margin: 0px auto;
+
+}
+
 .catalog-header {
   font-size: 55px;
   font-weight: 500;
@@ -117,7 +124,6 @@ a {
   display: flex;
   justify-content: space-between;
   width: 440px;
-  transform: t
 }
 
 .basket {
@@ -125,7 +131,7 @@ a {
   position: relative;
 }
 
-.basket > .nav-link::before {
+.basket::before {
   content: "";
   position: absolute;
   left: -40px;
@@ -150,7 +156,7 @@ a {
   color: #fb565a;
 }
 
-.nav-link:focus {
+.nav-link:active {
   color: #000000;
   opacity: 0.3;
 }
@@ -220,9 +226,10 @@ a {
 .main-products {
   margin: 0px;
   padding: 0px;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
   margin-top: 80px;
-  border-bottom: 2px solid black;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .products-list {
@@ -325,6 +332,11 @@ a {
   font-size: 45px;
   line-height: 45px;
   color: #000000;
+  margin-bottom: 32px;
+}
+
+.features-list {
+  margin-top: 39px;
 }
 
 .mini-title {
@@ -332,9 +344,16 @@ a {
   font-weight: 700;
   line-height: 24px;
   color: #000000;
+  margin-bottom: 55px;
 }
 
-.features-extra {}
+.features-extra {
+  margin-top: 10px;
+}
+
+.features-extra-content {
+  margin-top: 29px;
+}
 
 .mini-title.features-tr-title {
   font-size: 45px;
@@ -370,10 +389,8 @@ a {
 }
 
 .map-img {
-  width: 1200px;
   display: block;
   margin: 0px auto;
-  overflow: hidden;
 }
 
 .contacts-block {
@@ -540,10 +557,38 @@ a {
 
 /*end*/
 
+.catalog-item-browser {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  position: relative;
+}
+
+.catalog-item-browser::before {
+  content: "";
+  background-image: url(../img/browser.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.12;
+}
+
+.catalog-item-frame {
+  border: 2px solid black;
+}
+
+
 .catalog-item-popup {
   background-color: #eeeeee;
-  /*del*/
-  display: none;
+  position: absolute;
+  text-align: center;
+  padding: 40px 60px;
+  padding-top: 16px;
+  width: 100%;
+  bottom: 0px
 }
 
 .item-popup-title {
@@ -659,10 +704,19 @@ a {
 
 .catalog-item {
   margin: 0px;
+  margin-bottom: 33px;
   padding: 0px;
   width: 360px;
+  height: 620px;
   background-color: silver;
   overflow: hidden;
+  position: relative;
+  border-radius: 4px;
+  border: ;
+}
+
+.catalog-item:hover .catalog-item-popup {
+  display: block;
 }
 
 .product-filter {
@@ -673,6 +727,7 @@ a {
 
 .sorting-filter {
   margin: 0px;
+  margin-bottom: 53px;
   padding: 0px;
   width: 760px;
   display: flex;
