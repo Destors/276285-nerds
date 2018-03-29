@@ -38,14 +38,12 @@ img {
 
 .btn {
   display: block;
-
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-
   background-color: #fb565a;
   border-radius: 3px;
   border: none;
@@ -173,11 +171,8 @@ img {
   padding: 0 20px;
 }
 
-/*slider-start*/
-
 .slider {
   position: relative;
-
   background-color: #eeeeee;
 }
 
@@ -186,10 +181,8 @@ img {
   left: 50%;
   bottom: 104px;
   z-index: 100;
-
   width: 160px;
   height: 18px;
-
   text-align: center;
   font-size: 0;
   transform: translateX(-50%);
@@ -197,36 +190,29 @@ img {
 
 .slider-controls-item {
   position: relative;
-
   display: inline-block;
   width: 18px;
   height: 18px;
   padding: 8px;
-
   border-radius: 50%;
   cursor: pointer;
 }
 
 .slider-controls-item::after {
   content: "";
-
   position: absolute;
   top: 8px;
   left: 8px;
   z-index: 1;
-
   width: 18px;
   height: 18px;
-
   background: #ffffff;
-
   border-radius: 50%;
 }
 
 .slider-list {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
@@ -291,7 +277,6 @@ img {
   max-width: 600px;
   margin: 0;
   margin-bottom: 27px;
-
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -309,8 +294,6 @@ img {
   max-width: 240px;
 }
 
-/*slider-end*/
-
 .main-products {
   margin: 0px;
   padding: 0px;
@@ -327,7 +310,6 @@ img {
   list-style: none;
   flex-wrap: wrap;
   margin-left: -100px;
-
 }
 
 .products-item {
@@ -455,7 +437,6 @@ img {
   width: 25px;
 }
 
-
 .mini-title {
   text-transform: uppercase;
   font-weight: 700;
@@ -508,10 +489,6 @@ img {
   padding-bottom: 11px;
 }
 
-.partners-list .partners-item:nth-child(4n):after {
-  content: none;
-}
-
 .partners-item {
   margin: 0px;
   margin-left: 40px;
@@ -531,6 +508,10 @@ img {
   width: 2px;
   height: 50px;
   background-color: #eeeeee;
+}
+
+.partners-list .partners-item:nth-child(4n):after {
+  content: none;
 }
 
 .partners-link {
@@ -587,8 +568,6 @@ img {
   opacity: 0.5;
   display: none;
 }
-
-/*у тебя фиксированная ширина, используй transform чтобы центровать*/
 
 .modal-window {
   position: fixed;
@@ -688,8 +667,6 @@ img {
   line-height: 18px;
 }
 
-/*start*/
-
 .filter-item.price-filter {
   margin-bottom: 56px;
 }
@@ -699,6 +676,10 @@ img {
   padding: 0;
   border: none;
   margin-bottom: 12px;
+}
+
+.filter-list {
+  list-style: none;
 }
 
 .filter-list-item {
@@ -720,28 +701,23 @@ img {
 
 .range-controls {
   position: relative;
-
   height: 81px;
   margin-bottom: 15px;
   padding-top: 40px;
   padding-right: 20px;
   padding-left: 20px;
-
   background-color: #f1f1f1;
-
   border-radius: 5px;
 }
 
 .range-controls .scale {
   height: 2px;
-
   background: #d7dcde;
 }
 
 .range-controls .bar {
   width: 70%;
   height: 2px;
-
   background: #00ca74;
 }
 
@@ -749,11 +725,9 @@ img {
   position: absolute;
   top: 31px;
   left: 0;
-
   width: 20px;
   height: 20px;
   padding: 0;
-
   border: 8px solid #ffffff;
   background-color: #ababab;
   box-shadow: 0 2px 1px 0 #cfcfcf;
@@ -776,7 +750,6 @@ img {
 .price-label {
   display: inline-block;
   width: 50%;
-
   font-size: 16px;
   text-transform: uppercase;
 }
@@ -785,10 +758,8 @@ img {
   width: 80px;
   padding: 10px 10px;
   margin-left: 8px;
-
   text-align: center;
   color: #283136;
-
   border: none;
   border-radius: 5px;
   background: #f1f1f1;
@@ -797,8 +768,6 @@ img {
 .max-price {
   text-align: right;
 }
-
-/*end*/
 
 .catalog-item-browser {
   margin: 0;
@@ -1089,10 +1058,6 @@ img {
   padding-left: 15px;
 }
 
-.filter-list {
-  list-style: none;
-}
-
 .features-radio-input {
   position: relative;
   opacity: 0.4;
@@ -1105,8 +1070,6 @@ img {
 .features-radio-input:disabled {
   opacity: 0.1;
 }
-
-
 
 .features-radio-input::before {
   content: "";
@@ -1173,7 +1136,7 @@ img {
 }
 
 .modal-show {
-  display: flex;
+  display: block;
 }
 
 
