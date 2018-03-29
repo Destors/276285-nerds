@@ -118,8 +118,13 @@ a {
   margin-top: 30px;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 440px;
+}
+
+.nav-list .nav-link {
+  min-width: 80px;
 }
 
 .basket {
@@ -493,9 +498,29 @@ a {
   padding-right: 43px;
   padding-left: 31px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.partners-list .partners-item:nth-child(4n):after {
+  content: none;
+}
+
+.partners-item {
+  position: relative;
+  margin-right: 50px;
+}
+
+.partners-item::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 245px;
+  width: 2px;
+  height: 50px;
+  background-color: #eeeeee;
 }
 
 .partners-link {
@@ -863,6 +888,7 @@ a {
 .pagination-link:active {
   background-color: #d5d5d5;
   box-shadow: inset 0 2px 2px 0px #bfbfbf;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .pagination-link.current {
@@ -1129,6 +1155,7 @@ a {
 .filter-submit-btn:active {
   background-color: #d5d5d5;
   box-shadow: inset 0 2px 2px 2px #bfbfbf;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .modal-show {
