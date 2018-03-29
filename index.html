@@ -13,23 +13,23 @@
         <nav aria-label="Основное меню" class="main-navigation">
           <a class="header-logo"><img alt="Логотип студии Нёрдс" height="65" src="img/nerds-logo.png" width="160"></a>
           <div class="main-menu">
-          <ul class="nav-list">
-            <li>
-              <a class="nav-link" href="studio.html">Студия</a>
-            </li>
-            <li>
-              <a class="nav-link" href="clients.html">Клиенты</a>
-            </li>
-            <li>
-              <a class="nav-link" href="catalog.html">Магазин</a>
-            </li>
-            <li>
-              <a class="nav-link" href="contacts.html">Контакты</a>
-            </li>
-          </ul>
-          <div class="basket">
-            <a class="nav-link" href="basket.html">Корзина</a>
-          </div>
+            <ul class="nav-list">
+              <li>
+                <a class="nav-link" href="studio.html">Студия</a>
+              </li>
+              <li>
+                <a class="nav-link" href="clients.html">Клиенты</a>
+              </li>
+              <li>
+                <a class="nav-link" href="catalog.html">Магазин</a>
+              </li>
+              <li>
+                <a class="nav-link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+            <div class="basket">
+              <a class="nav-link" href="basket.html">Корзина</a>
+            </div>
           </div>
         </nav>
         <section class="slider">
@@ -198,11 +198,11 @@
           <fieldset class="filter-item">
             <legend class="visually-hidden">Заполните простую форму и напишете нам</legend>
             <div class="half-width-block">
-              <div class="half-width">
+              <div class="half-width-column">
                 <label class="modal-label" for="username">Ваше имя:</label>
                 <input class="modal-input" id="username" name="username" placeholder="Имя Фамилия" type="text">
               </div>
-              <div class="half-width">
+              <div class="half-width-column">
                 <label class="modal-label" for="email">Ваш e-mail:</label>
                 <input class="modal-input" id="email" name="email" placeholder="email@example.com" type="email">
               </div>
@@ -217,21 +217,6 @@
         <button class="modal-close-btn" title="Закрыть поле формы"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg></button>
       </div>
     </section>
-    <script>
-  var link = document.querySelector(".contacts-btn");
-
-  var popup = document.querySelector(".modal-window");
-  var close = popup.querySelector(".modal-close-btn");
-
-  link.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.add("modal-show");
-  });
-
-  close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-  });
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
