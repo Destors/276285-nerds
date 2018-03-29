@@ -33,30 +33,35 @@
           </div>
         </nav>
         <section class="slider">
-          <h2 class="visually-hidden">Наши принципы</h2>
-          <div class="slider-block">
-            <div class="slider-item one current">
-              <div class="slider-content">
-                <h3 class="slider-title">Долго, дорого, скрупулезно.</h3>
-                <p class="slider-description">Математически выверенный дизайн
-                  <br>для вашего сайта или мобильного приложения.</p>
-                <a class="btn slider-btn" href="#">Узнать больше</a>
-              </div>
-              <div class="slider-img"></div>
-            </div>
-            <div class="slider-item two">
-              <h3 class="slider-title">Любим математику как никто другой.</h3>
-              <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-              <a class="btn slider-btn" href="#">Узнать больше</a>
-            </div>
-            <div class="slider-item three">
-              <h3 class="slider-title">Только ночь, только хардкор.</h3>
-              <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-              <a class="btn slider-btn" href="#">Узнать больше</a>
-            </div>
-            <button class="slider-btn-switch"></button>
-          </div>
-        </section>
+      <div class="container">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+        <div class="slider-controls">
+          <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+          <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+          <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+        </div>
+        <ul class="slider-list">
+          <li class="slider-item one">
+            <h3 class="slider-title">Долго, дорого,<br> скрупулезно.</h3>
+            <p class="slider-description">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+            <a class="btn slider-item-btn" href="#">Узнать больше</a>
+          </li>
+          <li class="slider-item two">
+            <h3 class="slider-title">Любим математику как никто другой</h3>
+            <p class="slider-description">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a class="btn slider-item-btn" href="#">Узнать больше</a>
+          </li>
+          <li class="slider-item three">
+            <h3 class="slider-title">Только ночь,<br> только хардкор</h3>
+            <p class="slider-description">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+            <a class="btn slider-item-btn" href="#">Узнать больше</a>
+          </li>
+        </ul>
+      </div>
+    </section>
       </div>
     </header>
     <main class="container">
@@ -212,6 +217,21 @@
         <button class="modal-close-btn" title="Закрыть поле формы"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg></button>
       </div>
     </section>
-    <script type="text/javascript" src="../js/script.js"></script>
+    <script>
+  var link = document.querySelector(".contacts-btn");
+
+  var popup = document.querySelector(".modal-window");
+  var close = popup.querySelector(".modal-close-btn");
+
+  link.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.add("modal-show");
+  });
+
+  close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+  });
+    </script>
   </body>
 </html>

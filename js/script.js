@@ -1,7 +1,7 @@
-  var link = document.querySelector(".login-link");
+  var link = document.querySelector(".contacts-btn");
 
-  var popup = document.querySelector(".modal-login");
-  var close = popup.querySelector(".modal-close");
+  var popup = document.querySelector(".modal-window");
+  var close = popup.querySelector(".modal-close-btn");
 
   link.addEventListener("click", function (evt) {
     evt.preventDefault();
