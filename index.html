@@ -190,24 +190,26 @@
       <div class="modal-block">
         <h2 class="modal-title">Напишите нам</h2>
         <form action="https://echo.htmlacademy.ru" class="writeus-modal-form" method="post">
-          <fieldset>
-            <legend>Заполните простую форму и напишете нам</legend>
-            <p>
-              <label class="modal-label" for="username">Ваше имя:</label>
-              <input id="username" name="username" placeholder="Имя Фамилия" type="text">
-            </p>
-            <p>
-              <label class="modal-label" for="email">Ваш e-mail:</label>
-              <input id="email" name="email" placeholder="email@example.com" type="email">
-            </p>
+          <fieldset class="filter-item">
+            <legend class="visually-hidden">Заполните простую форму и напишете нам</legend>
+            <div class="half-width-block">
+              <div class="half-width">
+                <label class="modal-label" for="username">Ваше имя:</label>
+                <input class="modal-input" id="username" name="username" placeholder="Имя Фамилия" type="text">
+              </div>
+              <div class="half-width">
+                <label class="modal-label" for="email">Ваш e-mail:</label>
+                <input class="modal-input" id="email" name="email" placeholder="email@example.com" type="email">
+              </div>
+            </div>
             <p>
               <label class="modal-label" for="massage">Текст письма:</label>
-              <textarea cols="30" id="massage" name="massage" placeholder="В свободной форме" rows="3"></textarea>
+              <textarea class="modal-input massage-input" cols="30" id="massage" name="massage" placeholder="В свободной форме" rows="3"></textarea>
             </p>
-            <input class="btn" type="submit" value="Отправить">
+            <input class="btn modal-submit-btn" type="submit" value="Отправить">
           </fieldset>
         </form>
-        <button class="modal-close-btn">закрыть</button>
+        <button class="modal-close-btn" title="Закрыть поле формы"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg></button>
       </div>
     </section>
   </body>
