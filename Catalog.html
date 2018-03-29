@@ -35,8 +35,7 @@
         <h1 class="catalog-header">Магазин готовых шаблонов</h1>
       </div>
     </header>
-    <main class="container">
-      <div class="catalog-page">
+    <main class="container catalog-page">
         <section class="product-filter">
           <h2 class="visually-hidden">Фильтр особенностей товаров</h2>
           <form action="https://echo.htmlacademy.ru" method="post" oninput="level.value=cost.valueAsNumber">
@@ -118,9 +117,9 @@
                   <a class="sorting-link" href="#">По названию</a>
                 </li>
               </ul>
-              <div class="sorting-switch">
-                <a class="sorting-switch-down" aria-label="От большего к меньшему" title="От большего к меньшему" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a>
-                <a class="sorting-switch-up" aria-label="От меньшего к большему" title="От меньшего к большему" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a>
+              <div class="sorting-switch-block">
+                <a class="sorting-switch current" aria-label="От большего к меньшему" title="От большего к меньшему" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a>
+                <a class="sorting-switch" aria-label="От меньшего к большему" title="От меньшего к большему" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a>
               </div>
             </div>
           </section>
@@ -209,6 +208,7 @@
               </li>
             </ul>
           </section>
+       </div>
     </main>
     <section class="contacts">
       <h3 class="visually-hidden">Карта</h3>
