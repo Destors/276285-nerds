@@ -532,9 +532,16 @@ img {
   padding: 0px;
 }
 
+.map-img.iframe {
+  width: 100%;
+  border: none;
+}
+
 .map-img {
   display: block;
   margin: 0px auto;
+  min-width: 1200px;
+  min-height: 416px;
 }
 
 .contacts-block {
@@ -1058,9 +1065,18 @@ img {
   padding-left: 15px;
 }
 
+.features-radio-label {
+  color: #283136;
+}
+
+.features-radio-label:hover {
+  color: black;
+}
+
 .features-radio-input {
   position: relative;
   opacity: 0.4;
+  color: #283136;
 }
 
 .features-radio-input:hover {
@@ -1106,7 +1122,15 @@ img {
   background-image: url(../img/checkbox-off.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
-  opacity: 0.6;
+  opacity: 0.4;
+}
+
+.features-checkbox-input:hover::before {
+  opacity: 1.0;
+}
+
+.features-checkbox-input:disabled::before {
+  opacity: 0.1;
 }
 
 .features-checkbox-input:checked::before {
