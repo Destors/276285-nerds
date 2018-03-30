@@ -130,7 +130,7 @@ img {
   min-width: 80px;
 }
 
-.basket>.nav-link.current {
+.basket > .nav-link.current {
   border: none;
 }
 
