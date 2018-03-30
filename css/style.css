@@ -130,6 +130,21 @@ img {
   min-width: 80px;
 }
 
+.basket>.nav-link.current {
+  border: none;
+}
+
+.basket>.nav-link.current:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 13px;
+  left: -38px;
+  background-color: red;
+  width: 113px;
+  height: 2px;
+}
+
 .basket {
   margin-top: 30px;
   position: relative;
