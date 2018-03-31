@@ -219,15 +219,15 @@ img {
 
 .slider-controls {
   position: absolute;
-  left: 50%;
-  bottom: 104px;
+  left: 51%;
+  bottom: 96px;
   z-index: 100;
   width: 160px;
   height: 18px;
   text-align: center;
   font-size: 0;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-51%);
+  transform: translateX(-51%);
 }
 
 .slider-controls-item {
@@ -236,21 +236,15 @@ img {
   width: 18px;
   height: 18px;
   padding: 8px;
+  margin-right: 16px;
   border-radius: 50%;
   cursor: pointer;
-}
-
-.slider-controls-item::after {
   content: "";
-  position: absolute;
-  top: 8px;
-  left: 8px;
   z-index: 1;
-  width: 18px;
-  height: 18px;
   background: #ffffff;
   border-radius: 50%;
 }
+
 
 .slider-list {
   margin: 0;
@@ -283,10 +277,6 @@ img {
   background-position: 96% 9px;
 }
 
-.slider-controls-item {
-  margin-right: 16px;
-}
-
 #product-1:checked~.slider-list .slider-item:nth-child(1) {
   display: block;
 }
@@ -304,8 +294,8 @@ img {
 #product-3:checked~.slider-controls .slider-controls-item--3::before {
   content: "";
   position: absolute;
-  left: 94%;
-  top: 94%;
+  left: 50%;
+  top: 50%;
   z-index: 2;
   width: 8px;
   height: 8px;
@@ -1263,8 +1253,8 @@ img {
   cursor: pointer;
 }
 
-.features-radio-input:hover+.features-radio-label::before,
-.features-radio-input:focus+.features-radio-label::before {
+.features-radio-input:hover~.features-radio-label::before,
+.features-radio-input:focus~.features-radio-label::before {
   opacity: 1.0;
 }
 
@@ -1285,7 +1275,7 @@ img {
   opacity: 0.6;
 }
 
-.features-radio-input:checked+.features-radio-label::before {
+.features-radio-input:checked~.features-radio-label::before {
   background-image: url(../img/radio-on.svg);
 }
 
@@ -1320,7 +1310,7 @@ img {
   opacity: 1.0;
 }
 
-.features-checkbox-input:focus+.features-checkbox-label::before {
+.features-checkbox-input:focus~.features-checkbox-label::before {
   opacity: 1.0;
 }
 
@@ -1328,7 +1318,7 @@ img {
   opacity: 0.1;
 }
 
-.features-checkbox-input:checked+.features-checkbox-label::before {
+.features-checkbox-input:checked~.features-checkbox-label::before {
   background-image: url(../img/checkbox-on.svg);
 }
 
