@@ -142,10 +142,8 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 440px;
+  max-width: 550px;
+  margin-left: -47px;
 }
 
 .nav-list .nav-link {
@@ -175,7 +173,7 @@ img {
 .basket::before {
   content: "";
   position: absolute;
-  left: -40px;
+  left: 8px;
   top: 7px;
   width: 18px;
   height: 18px;
@@ -191,6 +189,7 @@ img {
 
 .nav-link {
   color: #000000;
+  margin-left: 47px;
 }
 
 .nav-link:hover:not(.current) {
