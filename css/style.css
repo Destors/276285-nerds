@@ -245,6 +245,11 @@ img {
   border-radius: 50%;
 }
 
+#product-1:focus~.slider-controls .slider-controls-item--1,
+#product-2:focus~.slider-controls .slider-controls-item--2,
+#product-3:focus~.slider-controls .slider-controls-item--3 {
+  outline: 2px solid #8C8C8C;
+}
 
 .slider-list {
   margin: 0;
