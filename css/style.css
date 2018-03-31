@@ -154,16 +154,16 @@ img {
   min-width: 80px;
 }
 
-.basket>.nav-link.current {
+.basket .nav-link.current {
   border: none;
 }
 
-.basket>.nav-link.current:after {
+.basket .nav-link.current:after {
   content: "";
   display: block;
   position: absolute;
   bottom: 13px;
-  left: -38px;
+  left: 10px;
   background-color: red;
   width: 113px;
   height: 2px;
@@ -682,7 +682,6 @@ img {
 .modal-window {
   position: fixed;
   width: 960px;
-  height: 593px;
   top: 47%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -700,6 +699,7 @@ img {
   margin: 0 auto;
   position: relative;
   padding-top: 21px;
+  padding-bottom: 53px;
 }
 
 .half-width-block {
