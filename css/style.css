@@ -478,6 +478,10 @@ img {
   margin-bottom: 32px;
 }
 
+.features-main-description {
+  max-width: 620px;
+}
+
 .features-list-block {
   margin-top: 39px;
 }
@@ -1012,7 +1016,7 @@ img {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: flex-start;
 }
 
 .footer-social-block {
