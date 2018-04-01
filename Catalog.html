@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Дизайн студия Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
@@ -51,8 +51,8 @@
                   <div class="toggle toggle-max" tabindex="0"></div>
                 </div>
                 <div class="price-controls">
-                  <label class="price-label min-price">от <input class="price-input" name="min-price" type="text" value="0"></label>
-                  <label class="price-label max-price">до <input class="price-input" name="max-price" type="text" value="15 000"></label>
+                  <label class="price-label min-price">от <input class="price-input field-text" name="min-price" type="text" value="0"></label>
+                  <label class="price-label max-price">до <input class="price-input field-text" name="max-price" type="text" value="15 000"></label>
                 </div>
               </div>
             </fieldset>
@@ -60,15 +60,15 @@
               <legend class="filter-title">Сетка:</legend>
               <ul class="filter-list">
                 <li class="filter-list-item">
-                  <input class="features-radio-input" checked id="grid-adaptive" name="grid-group" type="radio" value="grid-adaptive">
+                  <input class="features-radio-input field-text" checked id="grid-adaptive" name="grid-group" type="radio" value="grid-adaptive">
                   <label class="features-radio-label" for="grid-adaptive">Адаптивная</label>
                 </li>
                 <li class="filter-list-item">
-                  <input class="features-radio-input" id="grid-fix" name="grid-group" type="radio" value="grid-fix">
+                  <input class="features-radio-input field-text" id="grid-fix" name="grid-group" type="radio" value="grid-fix">
                   <label class="features-radio-label" for="grid-fix">Фиксированная</label>
                 </li>
                 <li class="filter-list-item">
-                  <input class="features-radio-input" id="grid-rubber" name="grid-group" type="radio" value="grid-rubber">
+                  <input class="features-radio-input field-text" id="grid-rubber" name="grid-group" type="radio" value="grid-rubber">
                   <label class="features-radio-label" for="grid-rubber">Резиновая</label>
                 </li>
               </ul>
@@ -77,28 +77,28 @@
               <legend class="filter-title">Особенности:</legend>
               <ul class="filter-list">
                 <li class="filter-list-item checkbox-list-item ">
-                  <input class="features-checkbox-input" checked id="slider" name="slider" type="checkbox">
+                  <input class="features-checkbox-input field-text" checked id="slider" name="slider" type="checkbox">
                   <label class="features-checkbox-label" for="slider">Слайдер</label>
                 </li>
                 <li class="filter-list-item checkbox-list-item">
-                  <input class="features-checkbox-input" id="benefits" name="benefits" type="checkbox">
+                  <input class="features-checkbox-input field-text" id="benefits" name="benefits" type="checkbox">
                   <label class="features-checkbox-label" for="benefits">Блок преимуществ</label>
                 </li>
                 <li class="filter-list-item checkbox-list-item">
-                  <input class="features-checkbox-input" checked id="news" name="news" type="checkbox">
+                  <input class="features-checkbox-input field-text" checked id="news" name="news" type="checkbox">
                   <label class="features-checkbox-label" for="news">Новости</label>
                 </li>
                 <li class="filter-list-item checkbox-list-item">
-                  <input class="features-checkbox-input" id="gallery" name="gallery" type="checkbox">
+                  <input class="features-checkbox-input field-text" id="gallery" name="gallery" type="checkbox">
                   <label class="features-checkbox-label" for="gallery">Галерея</label>
                 </li>
                 <li class="filter-list-item checkbox-list-item">
-                  <input class="features-checkbox-input" id="basket" name="basket" type="checkbox">
+                  <input class="features-checkbox-input field-text" id="basket" name="basket" type="checkbox">
                   <label class="features-checkbox-label" for="basket">Корзина</label>
                 </li>
               </ul>
             </fieldset>
-            <input class="filter-submit-btn" type="submit" value="Показать">
+            <input class="filter-submit-btn field-text" type="submit" value="Показать">
           </form>
         </section>
         <div class="catalog-main-colum">
@@ -281,18 +281,18 @@
             <div class="half-width-block">
               <div class="half-width-column">
                 <label class="modal-label" for="username">Ваше имя:</label>
-                <input class="modal-input" id="username" name="username" placeholder="Имя Фамилия" type="text">
+                <input class="modal-input field-text" id="username" name="username" placeholder="Имя Фамилия" type="text">
               </div>
               <div class="half-width-column">
                 <label class="modal-label" for="email">Ваш e-mail:</label>
-                <input class="modal-input" id="email" name="email" placeholder="email@example.com" type="email">
+                <input class="modal-input field-text" id="email" name="email" placeholder="email@example.com" type="email">
               </div>
             </div>
             <p>
               <label class="modal-label" for="massage">Текст письма:</label>
-              <textarea class="modal-input massage-input" cols="30" id="massage" name="massage" placeholder="В свободной форме" rows="3"></textarea>
+              <textarea class="modal-input massage-input field-text" cols="30" id="massage" name="massage" placeholder="В свободной форме" rows="3"></textarea>
             </p>
-            <input class="btn modal-submit-btn" type="submit" value="Отправить">
+            <input class="btn modal-submit-btn field-text" type="submit" value="Отправить">
           </fieldset>
         </form>
         <button class="modal-close-btn" title="Закрыть поле формы">

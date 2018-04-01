@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Дизайн студия Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
@@ -21,7 +21,7 @@
                 <a class="nav-link" href="clients.html">Клиенты</a>
               </li>
               <li>
-                <a class="nav-link" href="Catalog.html">Магазин</a>
+                <a class="nav-link" href="catalog.html">Магазин</a>
               </li>
               <li>
                 <a class="nav-link" href="contacts.html">Контакты</a>
@@ -35,9 +35,9 @@
         <section class="slider">
           <div class="container">
             <h2 class="visually-hidden">Преимущества</h2>
-            <input class="visually-hidden slider-input-1" type="radio" id="product-1" name="toggle" checked>
-            <input class="visually-hidden slider-input-2" type="radio" id="product-2" name="toggle">
-            <input class="visually-hidden slider-input-3" type="radio" id="product-3" name="toggle">
+            <input class="visually-hidden slider-input-1 field-text" type="radio" id="product-1" name="toggle" checked>
+            <input class="visually-hidden slider-input-2 field-text" type="radio" id="product-2" name="toggle">
+            <input class="visually-hidden slider-input-3 field-text" type="radio" id="product-3" name="toggle">
             <div class="slider-controls">
               <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
               <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
@@ -210,18 +210,18 @@
             <div class="half-width-block">
               <div class="half-width-column">
                 <label class="modal-label" for="username">Ваше имя:</label>
-                <input class="modal-input" id="username" name="username" placeholder="Имя Фамилия" type="text">
+                <input class="modal-input field-text" id="username" name="username" placeholder="Имя Фамилия" type="text">
               </div>
               <div class="half-width-column">
                 <label class="modal-label" for="email">Ваш e-mail:</label>
-                <input class="modal-input" id="email" name="email" placeholder="email@example.com" type="email">
+                <input class="modal-input field-text" id="email" name="email" placeholder="email@example.com" type="email">
               </div>
             </div>
             <p>
               <label class="modal-label" for="massage">Текст письма:</label>
-              <textarea class="modal-input massage-input" cols="30" id="massage" name="massage" placeholder="В свободной форме" rows="3"></textarea>
+              <textarea class="modal-input massage-input field-text" cols="30" id="massage" name="massage" placeholder="В свободной форме" rows="3"></textarea>
             </p>
-            <input class="btn modal-submit-btn" type="submit" value="Отправить">
+            <input class="btn modal-submit-btn field-text" type="submit" value="Отправить">
           </fieldset>
         </form>
         <button class="modal-close-btn" title="Закрыть поле формы">

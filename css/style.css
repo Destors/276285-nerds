@@ -20,6 +20,7 @@ body {
   line-height: 24px;
   color: #283136;
   background-color: #ffffff;
+  min-width: 1200px;
 }
 
 a {
@@ -30,6 +31,10 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.field-text {
+  font-family: inherit;
 }
 
 .visually-hidden {
@@ -687,6 +692,7 @@ img {
   background-color: white;
   overflow: hidden;
   display: none;
+  z-index: 100;
 }
 
 .modal-block {
@@ -782,6 +788,7 @@ img {
 .contacts-description {
   margin-top: 26px;
   line-height: 18px;
+  color: #666666;
 }
 
 .filter-item.price-filter {
@@ -977,11 +984,11 @@ img {
 
 .pagination-link {
   display: block;
-  padding: 10px 19px;
+  padding: 13px 20px;
+  margin-right: 12px;
   text-transform: uppercase;
   font-weight: 500;
   color: #000000;
-  margin-right: 14px;
   background-color: #eeeeee;
   border-radius: 3px;
 }
@@ -1016,14 +1023,15 @@ img {
 }
 
 .pagination-link.next {
-  padding: 10px 59px;
-  padding-left: 77px;
+  padding: 13px;
+  padding-left: 80px;
   padding-right: 76px;
 }
 
 .footer-social {
   margin-top: 68px;
   padding: 0px;
+  padding-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1124,7 +1132,7 @@ img {
 
 .catalog-list {
   margin: 0px;
-  margin-bottom: 34px;
+  margin-bottom: 29px;
   padding: 0px;
   width: 760px;
   display: -webkit-box;
