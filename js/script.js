@@ -1,3 +1,6 @@
+  document.querySelector('.iframe-block').classList.remove('no-js');
+  document.querySelector('.map-img').classList.add('no-js');
+
   var link = document.querySelector(".contacts-btn");
 
   var popup = document.querySelector(".modal-window");
@@ -5,6 +8,7 @@
   var close = popup.querySelector(".modal-close-btn");
 
   var login = popup.querySelector("[name=username]");
+
 
   link.addEventListener("click", function (evt) {
     evt.preventDefault();
