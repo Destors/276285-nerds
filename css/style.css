@@ -648,14 +648,6 @@ img {
 .map-img-block {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.map-img {
-  display: block;
-  margin: 0px auto;
-  overflow: hidden;
 }
 
 .contacts-block {
@@ -1372,7 +1364,7 @@ img {
 }
 
 
-@keyframes bounce {
+@keyframes appear {
   0% {
     opacity: 0;
   }
@@ -1384,5 +1376,5 @@ img {
 
 .modal-show {
   display: block;
-  animation: bounce 1.5s;
+  animation: appear 1.5s;
 }
